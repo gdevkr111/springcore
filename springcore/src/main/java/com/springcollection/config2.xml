@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    https://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+    
+    <!-- This is our beans -->
+
+<bean class="com.springcollection.Employees" name="employee1">
+
+<property name="name" value="Badal"/>
+
+<property name="phones">
+<list> 
+<value>3244242</value>
+<value>4535355</value>
+<value>12345</value>
+<value>12345</value>
+<null />
+</list>
+</property>
+
+<property name="address">
+<set>
+<value>Delhi</value>
+<value>Mumbai</value>
+<value>Chennai</value>
+<value>Chennai</value>
+<null />
+</set>
+</property>
+
+<property name="courses">
+<map>
+<entry key="java" value="2 Months" />
+<entry key="android" value="5 Months" />
+<entry key="spring" value="6 Months" />
+<entry key="javasript" value="3 months" />
+</map>
+</property>
+
+<property name="props">
+<props>
+<prop key="name">ghanshyam</prop>
+<prop key="Password">pass123</prop>
+</props>
+</property>
+
+
+</bean>
+</beans>
